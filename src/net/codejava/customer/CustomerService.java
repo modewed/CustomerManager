@@ -27,4 +27,8 @@ public class CustomerService {
         repo.deleteById(id);
     }
 
+
+    public List<Customer> search(String keyword) {
+        return repo.search(keyword);
+    }
 }
