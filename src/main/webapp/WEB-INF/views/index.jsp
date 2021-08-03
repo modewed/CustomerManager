@@ -33,7 +33,7 @@ Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
                 <td>
                     <a href="edit?id=${customer.id}">Edit</a>
 
-                    <a href="gitdelete?id=${customer.id}">Delete</a>
+                    <a href="delete?id=${customer.id}">Delete</a>
                 </td>
             </tr>
         </c:forEach>
