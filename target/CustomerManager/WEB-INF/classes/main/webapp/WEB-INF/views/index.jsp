@@ -15,7 +15,7 @@ Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
         <input type="text" name="keyword" />
         <input type="submit" value="Search" />
     </form>
-    <h3><a href="/new">New Customer</a></h3>
+    <h3><a href="new">New Customer</a></h3>
     <table border="1" cellpadding="5">
         <tr>
             <th>ID</th>
@@ -24,7 +24,6 @@ Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
             <th>Address</th>
             <th>Action</th>
         </tr>
-        ${listCustomer}
         <c:forEach items="${listCustomer}" var="customer">
             <tr>
                 <td>${customer.id}</td>
@@ -32,9 +31,9 @@ Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
                 <td>${customer.email}</td>
                 <td>${customer.address}</td>
                 <td>
-                    <a href="/edit?id=${customer.id}">Edit</a>
+                    <a href="edit?id=${customer.id}">Edit</a>
 
-                    <a href="/delete?id=${customer.id}">Delete</a>
+                    <a href="delete?id=${customer.id}">Delete</a>
                 </td>
             </tr>
         </c:forEach>
